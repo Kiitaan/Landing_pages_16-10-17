@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+html {
+  background-color: #F5F5F5;
+}
+
+#bord{
+  width: 250px;
+  padding: 50px;
+  border: 1px solid gray;
+  margin: 2;
+  background-color: #FFFFFF;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+footer {
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  color: grey;
+  font-size: small
+}
+
+h1 {
+  font-family: Verdana, sans-serif;
+  color: grey;
+  text-align: center;
+  font-size: xx-large
+}
+
+h2 {
+  text-align: center;
+  color: #3D4241;
+  font-family: Helvetica, sans-serif, Trebuchet MS, Verdana, Geneva, Arial;
+  font-size: large
+}
+
+h3 {
+  text-align: center;
+  color: #3D4241;
+  font-family: Helvetica, sans-serif, American Typewriter, serif, Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  font-size: small
+}
+
+.field {
+font-family: Helvetica, sans-serif, Trebuchet MS, Verdana, Geneva, Arial;
+font-size: medium
+}
+
+.form {
+  width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: large
+}
+
+.actions {
+  padding: 10px;
+  color: blue;
+}
+
+.agreement {
+  color: #C5CDCC;
+  text-align: center;
+  font-size: x-small
+}
+
+.submit {
+  padding: 100px;
+}
+
+.header {
+  width: 50px;
+  padding: 10px;
+  border: 1px solid gray;
+  margin: 2;
+  background-color: #FFFFFF;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}

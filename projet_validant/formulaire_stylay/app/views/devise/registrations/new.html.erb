@@ -1,0 +1,55 @@
+
+<header>  <%= render "devise/shared/links" %> </header>
+
+<h1>InTuiT</h1>
+
+<div id="bord">
+
+<h2>One Account.<br /> Everything Intuit.</h2>
+
+<h3>Create an account for all of InTuit products including Mint</h3>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, :class => "form" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone, 'phone' %><br />
+    <%= f.text_field :phone, :class => "form" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off", :class => "form"%>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off", :class => "form" %>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit "Create Account", :class =>"form" %>
+  </div>
+<% end %>
+
+<div class="agreement">
+  By clicking Create Account, you agree to our Licence
+  Agreement and Privacy Statement!
+</div>
+
+</div>
+
+<footer>
+  Intuit<br />
+  Intuit, Inc All rights reserved. Intuit, QuickBooks, QB, TurboTax
+  , ProConnect and Mint are registered trademarks of Intuit Inc.
+</footer>
